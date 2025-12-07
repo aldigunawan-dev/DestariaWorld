@@ -93,10 +93,12 @@ stages:
         - TAIGA: 2
         - maple-groves: 1
         - TAIGA_CLEARING: 1
+        - MAPLE_WOODLANDS: 2
         - FIR_FIELDS: 1
       boreal-cold:
         - TAIGA_CLEARING: 1
         - TAIGA: 2
+        - MAPLE_WOODLANDS: 2
         - FIR_FIELDS: 1
         - maple-groves: 1
       boreal-cold-highlands:
@@ -106,6 +108,7 @@ stages:
         - SNOWY_MEADOW: 1
       boreal-snowy:
         - SNOWY_TAIGA: 1
+        - MAPLE_WOODLANDS: 2
         - SNOWY_BIRCH_FOREST: 1
       boreal-snowy-highlands:
         - SNOWY_MOUNTAINS: 1
