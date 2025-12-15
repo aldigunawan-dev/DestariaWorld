@@ -74,7 +74,7 @@ if (getBlock(xOffset + 1, yOffset, zOffset) != "minecraft:air" &&
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
                     if (getBlock(xOffset + cx + 7, yOffset + 1, zOffset + cz) == "minecraft:chest") {
-                        block(xOffset + cx + 7, yOffset + 1, zOffset + cz, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
+                        block(xOffset + cx + 7, yOffset + 1, zOffset + cz, "minecraft:chest", true);
                     }
                 }
             }
@@ -116,7 +116,7 @@ if (getBlock(xOffset - 1, yOffset, zOffset) != "minecraft:air" &&
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
                     if (getBlock(xOffset + cx - 7, yOffset + 1, zOffset + cz) == "minecraft:chest") {
-                        block(xOffset + cx - 7, yOffset + 1, zOffset + cz, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
+                        block(xOffset + cx - 7, yOffset + 1, zOffset + cz, "minecraft:chest", true);
                     }
                 }
             }
@@ -159,7 +159,7 @@ if (getBlock(xOffset, yOffset, zOffset + 1) != "minecraft:air" &&
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
                     if (getBlock(xOffset + cx, yOffset + 1, zOffset + cz + 7) == "minecraft:chest") {
-                        block(xOffset + cx, yOffset + 1, zOffset + cz + 7, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
+                        block(xOffset + cx, yOffset + 1, zOffset + cz + 7, "minecraft:chest", true);
                     }
                 }
             }
@@ -204,7 +204,7 @@ if (getBlock(xOffset, yOffset, zOffset - 1) != "minecraft:air" &&
             for (num cx = -3; cx < 3; cx = cx + 1) {
                 for (num cz = -3; cz < 3; cz = cz + 1) {
                     if (getBlock(xOffset + cx, yOffset + 1, zOffset + cz - 7) == "minecraft:chest") {
-                        block(xOffset + cx, yOffset + 1, zOffset + cz - 7, "minecraft:chest{LootTable:'chests/simple_dungeon'}", true);
+                        block(xOffset + cx, yOffset + 1, zOffset + cz - 7, "minecraft:chest", true);
                     }
                 }
             }

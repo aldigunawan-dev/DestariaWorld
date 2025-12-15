@@ -13,5 +13,5 @@ for (num y = 0; y > -depth; y = y - 1) {
     block(0, yTranslate + y, 0, "minecraft:water", true, true);
 }
 
-block(0, yTranslate - depth, 0, "minecraft:suspicious_sand{LootTable:'archaeology/desert_well'}");
-block(0, yTranslate - depth - 1, 0, "minecraft:suspicious_sand{LootTable:'archaeology/desert_well'}");
+block(0, yTranslate - depth, 0, "minecraft:suspicious_sand");
+block(0, yTranslate - depth - 1, 0, "minecraft:suspicious_sand");
