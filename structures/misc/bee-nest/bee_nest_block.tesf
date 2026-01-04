@@ -19,19 +19,14 @@ if (randomDir == 0) {
     direction = "north";
 } 
 
-str bee_data = "";
 
 if (randomBees > 0) {
     num randomBeesMinusOne = randomBees - 1;
-    bee_data = "{bees:[";
     for (num i = 0; i < randomBees; i = i + 1) {
-        str bee = "{entity_data:{id:\"minecraft:bee\"},min_ticks_in_hive:" + ((i * 150) + randomInt(100)) + ",ticks_in_hive:0}";
-        bee_data = bee_data + bee;
         if (i < randomBeesMinusOne) {
-            bee_data = bee_data + ",";
+            entity(-2, 0, 0, "minecraft:bee");
         }
     }
-    bee_data = bee_data + "]}";
 }
 
-block(0, 0, 0, "minecraft:bee_nest[facing="+ direction +",honey_level="+ randomHon +"]" + bee_data, true);
+block(0, 0, 0, "minecraft:bee_nest[facing="+ direction +",honey_level="+ randomHon +"]", true);

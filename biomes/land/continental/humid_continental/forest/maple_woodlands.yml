@@ -15,7 +15,7 @@ colors:
   sky: 0xff8570
   grass: 0xff8375
   water: 0x287082
-  water-fog: 0x287082
+  water-fog: 0xFFE9DB
 
 palette:
   - GRASS: $meta.yml:top-y

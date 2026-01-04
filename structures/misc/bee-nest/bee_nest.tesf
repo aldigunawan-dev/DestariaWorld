@@ -23,14 +23,10 @@ if (randomDir == 0) {
 }
 
 num randomBeesMinusOne = randomBees - 1;
-str bee_data = "{bees:[";
-for (num i = 0; i < randomBees; i = i + 1) {
-    str bee = "{entity_data:{id:\"minecraft:bee\"},min_ticks_in_hive:" + ((i * 150) + randomInt(100)) + ",ticks_in_hive:0}";
-    bee_data = bee_data + bee;
+  for (num i = 0; i < randomBees; i = i + 1) {
         if (i < randomBeesMinusOne) {
-        bee_data = bee_data + ",";
+            entity(-2, 0, 0, "minecraft:bee");
     }
 }
-bee_data = bee_data + "]}";
 
-block(x, 0, z, "minecraft:bee_nest[facing=" + face + "]" + bee_data);
+block(x, 0, z, "minecraft:bee_nest[facing=" + face + "]");

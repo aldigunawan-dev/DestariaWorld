@@ -10,6 +10,7 @@ variables: &variables
   ceilingBase: 0.1
   ceilingHeight: 0.17
 
+
 terrain:
   sampler:
     type: EXPRESSION
